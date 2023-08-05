@@ -771,11 +771,11 @@ function create_fragment(ctx) {
 			link1 = element("link");
 			meta2 = element("meta");
 			style = element("style");
-			t = text("/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
+			t = text("/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a60;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-1hs3y42', document.head);
+			const head_nodes = head_selector('svelte-1lu5dc8', document.head);
 			meta0 = claim_element(head_nodes, "META", { name: true, content: true });
 			meta1 = claim_element(head_nodes, "META", { charset: true });
 
@@ -790,7 +790,7 @@ function create_fragment(ctx) {
 			meta2 = claim_element(head_nodes, "META", { name: true, content: true });
 			style = claim_element(head_nodes, "STYLE", {});
 			var style_nodes = children(style);
-			t = claim_text(style_nodes, "/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
+			t = claim_text(style_nodes, "/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a60;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
 			style_nodes.forEach(detach);
 			head_nodes.forEach(detach);
 			this.h();
@@ -2732,7 +2732,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (130:8) {#each social_links as { link, icon }}
+// (141:8) {#each social_links as { link, icon }}
 function create_each_block(ctx) {
 	let li;
 	let a;
@@ -2774,10 +2774,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-1hnjyad");
+			attr(span, "class", "svelte-1erfrv9");
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
-			attr(a, "class", "svelte-1hnjyad");
-			attr(li, "class", "svelte-1hnjyad");
+			attr(a, "class", "svelte-1erfrv9");
+			attr(li, "class", "svelte-1erfrv9");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2906,14 +2906,14 @@ function create_fragment$2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*portrait*/ ctx[1].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*portrait*/ ctx[1].image.alt);
-			attr(img, "class", "svelte-1hnjyad");
-			attr(figure, "class", "svelte-1hnjyad");
+			attr(img, "class", "svelte-1erfrv9");
+			attr(figure, "class", "svelte-1erfrv9");
 			toggle_class(figure, "square", /*portrait*/ ctx[1].variation === "square");
-			attr(h1, "class", "headline svelte-1hnjyad");
-			attr(div0, "class", "description svelte-1hnjyad");
-			attr(ul, "class", "social svelte-1hnjyad");
-			attr(div1, "class", "svelte-1hnjyad");
-			attr(div2, "class", "section-container svelte-1hnjyad");
+			attr(h1, "class", "headline svelte-1erfrv9");
+			attr(div0, "class", "description svelte-1erfrv9");
+			attr(ul, "class", "social svelte-1erfrv9");
+			attr(div1, "class", "svelte-1erfrv9");
+			attr(div2, "class", "section-container svelte-1erfrv9");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-f8320412");
 		},
@@ -3857,8 +3857,8 @@ function get_each_context$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (41:2) {#if main_heading}
-function create_if_block$1(ctx) {
+// (40:2) {#if main_heading}
+function create_if_block_1$1(ctx) {
 	let h2;
 	let t;
 
@@ -3891,58 +3891,27 @@ function create_if_block$1(ctx) {
 	};
 }
 
-// (45:4) {#each items as {label,icon}}
-function create_each_block$1(ctx) {
-	let li;
+// (46:8) {#if icon}
+function create_if_block$1(ctx) {
 	let icon;
-	let t0;
-	let span;
-	let t1_value = /*label*/ ctx[7] + "";
-	let t1;
-	let t2;
 	let current;
 	icon = new Component$1({ props: { icon: /*icon*/ ctx[8] } });
 
 	return {
 		c() {
-			li = element("li");
 			create_component(icon.$$.fragment);
-			t0 = space();
-			span = element("span");
-			t1 = text(t1_value);
-			t2 = space();
-			this.h();
 		},
 		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
-			var li_nodes = children(li);
-			claim_component(icon.$$.fragment, li_nodes);
-			t0 = claim_space(li_nodes);
-			span = claim_element(li_nodes, "SPAN", {});
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, t1_value);
-			span_nodes.forEach(detach);
-			t2 = claim_space(li_nodes);
-			li_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(li, "class", "svelte-ps7fbl");
+			claim_component(icon.$$.fragment, nodes);
 		},
 		m(target, anchor) {
-			insert_hydration(target, li, anchor);
-			mount_component(icon, li, null);
-			append_hydration(li, t0);
-			append_hydration(li, span);
-			append_hydration(span, t1);
-			append_hydration(li, t2);
+			mount_component(icon, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
 			if (dirty & /*items*/ 4) icon_changes.icon = /*icon*/ ctx[8];
 			icon.$set(icon_changes);
-			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
 		},
 		i(local) {
 			if (current) return;
@@ -3954,8 +3923,95 @@ function create_each_block$1(ctx) {
 			current = false;
 		},
 		d(detaching) {
+			destroy_component(icon, detaching);
+		}
+	};
+}
+
+// (44:4) {#each items as {label,icon}}
+function create_each_block$1(ctx) {
+	let li;
+	let t0;
+	let span;
+	let t1_value = /*label*/ ctx[7] + "";
+	let t1;
+	let t2;
+	let current;
+	let if_block = /*icon*/ ctx[8] && create_if_block$1(ctx);
+
+	return {
+		c() {
+			li = element("li");
+			if (if_block) if_block.c();
+			t0 = space();
+			span = element("span");
+			t1 = text(t1_value);
+			t2 = space();
+			this.h();
+		},
+		l(nodes) {
+			li = claim_element(nodes, "LI", { class: true });
+			var li_nodes = children(li);
+			if (if_block) if_block.l(li_nodes);
+			t0 = claim_space(li_nodes);
+			span = claim_element(li_nodes, "SPAN", {});
+			var span_nodes = children(span);
+			t1 = claim_text(span_nodes, t1_value);
+			span_nodes.forEach(detach);
+			t2 = claim_space(li_nodes);
+			li_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(li, "class", "svelte-1xry70j");
+		},
+		m(target, anchor) {
+			insert_hydration(target, li, anchor);
+			if (if_block) if_block.m(li, null);
+			append_hydration(li, t0);
+			append_hydration(li, span);
+			append_hydration(span, t1);
+			append_hydration(li, t2);
+			current = true;
+		},
+		p(ctx, dirty) {
+			if (/*icon*/ ctx[8]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*items*/ 4) {
+						transition_in(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block$1(ctx);
+					if_block.c();
+					transition_in(if_block, 1);
+					if_block.m(li, t0);
+				}
+			} else if (if_block) {
+				group_outros();
+
+				transition_out(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				check_outros();
+			}
+
+			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
+		},
+		i(local) {
+			if (current) return;
+			transition_in(if_block);
+			current = true;
+		},
+		o(local) {
+			transition_out(if_block);
+			current = false;
+		},
+		d(detaching) {
 			if (detaching) detach(li);
-			destroy_component(icon);
+			if (if_block) if_block.d();
 		}
 	};
 }
@@ -3969,7 +4025,7 @@ function create_fragment$e(ctx) {
 	let t2;
 	let ul;
 	let current;
-	let if_block = /*main_heading*/ ctx[0] && create_if_block$1(ctx);
+	let if_block = /*main_heading*/ ctx[0] && create_if_block_1$1(ctx);
 	let each_value = /*items*/ ctx[2];
 	let each_blocks = [];
 
@@ -4024,8 +4080,8 @@ function create_fragment$e(ctx) {
 		},
 		h() {
 			attr(h3, "class", "subheading");
-			attr(ul, "class", "svelte-ps7fbl");
-			attr(section, "class", "section-container svelte-ps7fbl");
+			attr(ul, "class", "svelte-1xry70j");
+			attr(section, "class", "section-container svelte-1xry70j");
 			attr(div, "class", "section");
 			attr(div, "id", "section-008c7efd");
 		},
@@ -4052,7 +4108,7 @@ function create_fragment$e(ctx) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block$1(ctx);
+					if_block = create_if_block_1$1(ctx);
 					if_block.c();
 					if_block.m(section, t0);
 				}
@@ -4163,8 +4219,8 @@ function get_each_context$2(ctx, list, i) {
 	return child_ctx;
 }
 
-// (41:2) {#if main_heading}
-function create_if_block$2(ctx) {
+// (40:2) {#if main_heading}
+function create_if_block_1$2(ctx) {
 	let h2;
 	let t;
 
@@ -4197,58 +4253,27 @@ function create_if_block$2(ctx) {
 	};
 }
 
-// (45:4) {#each items as {label,icon}}
-function create_each_block$2(ctx) {
-	let li;
+// (46:8) {#if icon}
+function create_if_block$2(ctx) {
 	let icon;
-	let t0;
-	let span;
-	let t1_value = /*label*/ ctx[7] + "";
-	let t1;
-	let t2;
 	let current;
 	icon = new Component$1({ props: { icon: /*icon*/ ctx[8] } });
 
 	return {
 		c() {
-			li = element("li");
 			create_component(icon.$$.fragment);
-			t0 = space();
-			span = element("span");
-			t1 = text(t1_value);
-			t2 = space();
-			this.h();
 		},
 		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
-			var li_nodes = children(li);
-			claim_component(icon.$$.fragment, li_nodes);
-			t0 = claim_space(li_nodes);
-			span = claim_element(li_nodes, "SPAN", {});
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, t1_value);
-			span_nodes.forEach(detach);
-			t2 = claim_space(li_nodes);
-			li_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(li, "class", "svelte-ps7fbl");
+			claim_component(icon.$$.fragment, nodes);
 		},
 		m(target, anchor) {
-			insert_hydration(target, li, anchor);
-			mount_component(icon, li, null);
-			append_hydration(li, t0);
-			append_hydration(li, span);
-			append_hydration(span, t1);
-			append_hydration(li, t2);
+			mount_component(icon, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
 			if (dirty & /*items*/ 4) icon_changes.icon = /*icon*/ ctx[8];
 			icon.$set(icon_changes);
-			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
 		},
 		i(local) {
 			if (current) return;
@@ -4260,8 +4285,95 @@ function create_each_block$2(ctx) {
 			current = false;
 		},
 		d(detaching) {
+			destroy_component(icon, detaching);
+		}
+	};
+}
+
+// (44:4) {#each items as {label,icon}}
+function create_each_block$2(ctx) {
+	let li;
+	let t0;
+	let span;
+	let t1_value = /*label*/ ctx[7] + "";
+	let t1;
+	let t2;
+	let current;
+	let if_block = /*icon*/ ctx[8] && create_if_block$2(ctx);
+
+	return {
+		c() {
+			li = element("li");
+			if (if_block) if_block.c();
+			t0 = space();
+			span = element("span");
+			t1 = text(t1_value);
+			t2 = space();
+			this.h();
+		},
+		l(nodes) {
+			li = claim_element(nodes, "LI", { class: true });
+			var li_nodes = children(li);
+			if (if_block) if_block.l(li_nodes);
+			t0 = claim_space(li_nodes);
+			span = claim_element(li_nodes, "SPAN", {});
+			var span_nodes = children(span);
+			t1 = claim_text(span_nodes, t1_value);
+			span_nodes.forEach(detach);
+			t2 = claim_space(li_nodes);
+			li_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(li, "class", "svelte-1xry70j");
+		},
+		m(target, anchor) {
+			insert_hydration(target, li, anchor);
+			if (if_block) if_block.m(li, null);
+			append_hydration(li, t0);
+			append_hydration(li, span);
+			append_hydration(span, t1);
+			append_hydration(li, t2);
+			current = true;
+		},
+		p(ctx, dirty) {
+			if (/*icon*/ ctx[8]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*items*/ 4) {
+						transition_in(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block$2(ctx);
+					if_block.c();
+					transition_in(if_block, 1);
+					if_block.m(li, t0);
+				}
+			} else if (if_block) {
+				group_outros();
+
+				transition_out(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				check_outros();
+			}
+
+			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
+		},
+		i(local) {
+			if (current) return;
+			transition_in(if_block);
+			current = true;
+		},
+		o(local) {
+			transition_out(if_block);
+			current = false;
+		},
+		d(detaching) {
 			if (detaching) detach(li);
-			destroy_component(icon);
+			if (if_block) if_block.d();
 		}
 	};
 }
@@ -4275,7 +4387,7 @@ function create_fragment$f(ctx) {
 	let t2;
 	let ul;
 	let current;
-	let if_block = /*main_heading*/ ctx[0] && create_if_block$2(ctx);
+	let if_block = /*main_heading*/ ctx[0] && create_if_block_1$2(ctx);
 	let each_value = /*items*/ ctx[2];
 	let each_blocks = [];
 
@@ -4330,8 +4442,8 @@ function create_fragment$f(ctx) {
 		},
 		h() {
 			attr(h3, "class", "subheading");
-			attr(ul, "class", "svelte-ps7fbl");
-			attr(section, "class", "section-container svelte-ps7fbl");
+			attr(ul, "class", "svelte-1xry70j");
+			attr(section, "class", "section-container svelte-1xry70j");
 			attr(div, "class", "section");
 			attr(div, "id", "section-ea4e9ae5");
 		},
@@ -4358,7 +4470,7 @@ function create_fragment$f(ctx) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block$2(ctx);
+					if_block = create_if_block_1$2(ctx);
 					if_block.c();
 					if_block.m(section, t0);
 				}
@@ -4469,8 +4581,8 @@ function get_each_context$3(ctx, list, i) {
 	return child_ctx;
 }
 
-// (41:2) {#if main_heading}
-function create_if_block$3(ctx) {
+// (40:2) {#if main_heading}
+function create_if_block_1$3(ctx) {
 	let h2;
 	let t;
 
@@ -4503,58 +4615,27 @@ function create_if_block$3(ctx) {
 	};
 }
 
-// (45:4) {#each items as {label,icon}}
-function create_each_block$3(ctx) {
-	let li;
+// (46:8) {#if icon}
+function create_if_block$3(ctx) {
 	let icon;
-	let t0;
-	let span;
-	let t1_value = /*label*/ ctx[7] + "";
-	let t1;
-	let t2;
 	let current;
 	icon = new Component$1({ props: { icon: /*icon*/ ctx[8] } });
 
 	return {
 		c() {
-			li = element("li");
 			create_component(icon.$$.fragment);
-			t0 = space();
-			span = element("span");
-			t1 = text(t1_value);
-			t2 = space();
-			this.h();
 		},
 		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
-			var li_nodes = children(li);
-			claim_component(icon.$$.fragment, li_nodes);
-			t0 = claim_space(li_nodes);
-			span = claim_element(li_nodes, "SPAN", {});
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, t1_value);
-			span_nodes.forEach(detach);
-			t2 = claim_space(li_nodes);
-			li_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(li, "class", "svelte-ps7fbl");
+			claim_component(icon.$$.fragment, nodes);
 		},
 		m(target, anchor) {
-			insert_hydration(target, li, anchor);
-			mount_component(icon, li, null);
-			append_hydration(li, t0);
-			append_hydration(li, span);
-			append_hydration(span, t1);
-			append_hydration(li, t2);
+			mount_component(icon, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
 			if (dirty & /*items*/ 4) icon_changes.icon = /*icon*/ ctx[8];
 			icon.$set(icon_changes);
-			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
 		},
 		i(local) {
 			if (current) return;
@@ -4566,8 +4647,95 @@ function create_each_block$3(ctx) {
 			current = false;
 		},
 		d(detaching) {
+			destroy_component(icon, detaching);
+		}
+	};
+}
+
+// (44:4) {#each items as {label,icon}}
+function create_each_block$3(ctx) {
+	let li;
+	let t0;
+	let span;
+	let t1_value = /*label*/ ctx[7] + "";
+	let t1;
+	let t2;
+	let current;
+	let if_block = /*icon*/ ctx[8] && create_if_block$3(ctx);
+
+	return {
+		c() {
+			li = element("li");
+			if (if_block) if_block.c();
+			t0 = space();
+			span = element("span");
+			t1 = text(t1_value);
+			t2 = space();
+			this.h();
+		},
+		l(nodes) {
+			li = claim_element(nodes, "LI", { class: true });
+			var li_nodes = children(li);
+			if (if_block) if_block.l(li_nodes);
+			t0 = claim_space(li_nodes);
+			span = claim_element(li_nodes, "SPAN", {});
+			var span_nodes = children(span);
+			t1 = claim_text(span_nodes, t1_value);
+			span_nodes.forEach(detach);
+			t2 = claim_space(li_nodes);
+			li_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(li, "class", "svelte-1xry70j");
+		},
+		m(target, anchor) {
+			insert_hydration(target, li, anchor);
+			if (if_block) if_block.m(li, null);
+			append_hydration(li, t0);
+			append_hydration(li, span);
+			append_hydration(span, t1);
+			append_hydration(li, t2);
+			current = true;
+		},
+		p(ctx, dirty) {
+			if (/*icon*/ ctx[8]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*items*/ 4) {
+						transition_in(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block$3(ctx);
+					if_block.c();
+					transition_in(if_block, 1);
+					if_block.m(li, t0);
+				}
+			} else if (if_block) {
+				group_outros();
+
+				transition_out(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				check_outros();
+			}
+
+			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
+		},
+		i(local) {
+			if (current) return;
+			transition_in(if_block);
+			current = true;
+		},
+		o(local) {
+			transition_out(if_block);
+			current = false;
+		},
+		d(detaching) {
 			if (detaching) detach(li);
-			destroy_component(icon);
+			if (if_block) if_block.d();
 		}
 	};
 }
@@ -4581,7 +4749,7 @@ function create_fragment$g(ctx) {
 	let t2;
 	let ul;
 	let current;
-	let if_block = /*main_heading*/ ctx[0] && create_if_block$3(ctx);
+	let if_block = /*main_heading*/ ctx[0] && create_if_block_1$3(ctx);
 	let each_value = /*items*/ ctx[2];
 	let each_blocks = [];
 
@@ -4636,8 +4804,8 @@ function create_fragment$g(ctx) {
 		},
 		h() {
 			attr(h3, "class", "subheading");
-			attr(ul, "class", "svelte-ps7fbl");
-			attr(section, "class", "section-container svelte-ps7fbl");
+			attr(ul, "class", "svelte-1xry70j");
+			attr(section, "class", "section-container svelte-1xry70j");
 			attr(div, "class", "section");
 			attr(div, "id", "section-8a3928d8");
 		},
@@ -4664,7 +4832,7 @@ function create_fragment$g(ctx) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block$3(ctx);
+					if_block = create_if_block_1$3(ctx);
 					if_block.c();
 					if_block.m(section, t0);
 				}
@@ -4775,8 +4943,8 @@ function get_each_context$4(ctx, list, i) {
 	return child_ctx;
 }
 
-// (41:2) {#if main_heading}
-function create_if_block$4(ctx) {
+// (40:2) {#if main_heading}
+function create_if_block_1$4(ctx) {
 	let h2;
 	let t;
 
@@ -4809,58 +4977,27 @@ function create_if_block$4(ctx) {
 	};
 }
 
-// (45:4) {#each items as {label,icon}}
-function create_each_block$4(ctx) {
-	let li;
+// (46:8) {#if icon}
+function create_if_block$4(ctx) {
 	let icon;
-	let t0;
-	let span;
-	let t1_value = /*label*/ ctx[7] + "";
-	let t1;
-	let t2;
 	let current;
 	icon = new Component$1({ props: { icon: /*icon*/ ctx[8] } });
 
 	return {
 		c() {
-			li = element("li");
 			create_component(icon.$$.fragment);
-			t0 = space();
-			span = element("span");
-			t1 = text(t1_value);
-			t2 = space();
-			this.h();
 		},
 		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
-			var li_nodes = children(li);
-			claim_component(icon.$$.fragment, li_nodes);
-			t0 = claim_space(li_nodes);
-			span = claim_element(li_nodes, "SPAN", {});
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, t1_value);
-			span_nodes.forEach(detach);
-			t2 = claim_space(li_nodes);
-			li_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(li, "class", "svelte-ps7fbl");
+			claim_component(icon.$$.fragment, nodes);
 		},
 		m(target, anchor) {
-			insert_hydration(target, li, anchor);
-			mount_component(icon, li, null);
-			append_hydration(li, t0);
-			append_hydration(li, span);
-			append_hydration(span, t1);
-			append_hydration(li, t2);
+			mount_component(icon, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
 			if (dirty & /*items*/ 4) icon_changes.icon = /*icon*/ ctx[8];
 			icon.$set(icon_changes);
-			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
 		},
 		i(local) {
 			if (current) return;
@@ -4872,8 +5009,95 @@ function create_each_block$4(ctx) {
 			current = false;
 		},
 		d(detaching) {
+			destroy_component(icon, detaching);
+		}
+	};
+}
+
+// (44:4) {#each items as {label,icon}}
+function create_each_block$4(ctx) {
+	let li;
+	let t0;
+	let span;
+	let t1_value = /*label*/ ctx[7] + "";
+	let t1;
+	let t2;
+	let current;
+	let if_block = /*icon*/ ctx[8] && create_if_block$4(ctx);
+
+	return {
+		c() {
+			li = element("li");
+			if (if_block) if_block.c();
+			t0 = space();
+			span = element("span");
+			t1 = text(t1_value);
+			t2 = space();
+			this.h();
+		},
+		l(nodes) {
+			li = claim_element(nodes, "LI", { class: true });
+			var li_nodes = children(li);
+			if (if_block) if_block.l(li_nodes);
+			t0 = claim_space(li_nodes);
+			span = claim_element(li_nodes, "SPAN", {});
+			var span_nodes = children(span);
+			t1 = claim_text(span_nodes, t1_value);
+			span_nodes.forEach(detach);
+			t2 = claim_space(li_nodes);
+			li_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(li, "class", "svelte-1xry70j");
+		},
+		m(target, anchor) {
+			insert_hydration(target, li, anchor);
+			if (if_block) if_block.m(li, null);
+			append_hydration(li, t0);
+			append_hydration(li, span);
+			append_hydration(span, t1);
+			append_hydration(li, t2);
+			current = true;
+		},
+		p(ctx, dirty) {
+			if (/*icon*/ ctx[8]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*items*/ 4) {
+						transition_in(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block$4(ctx);
+					if_block.c();
+					transition_in(if_block, 1);
+					if_block.m(li, t0);
+				}
+			} else if (if_block) {
+				group_outros();
+
+				transition_out(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				check_outros();
+			}
+
+			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
+		},
+		i(local) {
+			if (current) return;
+			transition_in(if_block);
+			current = true;
+		},
+		o(local) {
+			transition_out(if_block);
+			current = false;
+		},
+		d(detaching) {
 			if (detaching) detach(li);
-			destroy_component(icon);
+			if (if_block) if_block.d();
 		}
 	};
 }
@@ -4887,7 +5111,7 @@ function create_fragment$h(ctx) {
 	let t2;
 	let ul;
 	let current;
-	let if_block = /*main_heading*/ ctx[0] && create_if_block$4(ctx);
+	let if_block = /*main_heading*/ ctx[0] && create_if_block_1$4(ctx);
 	let each_value = /*items*/ ctx[2];
 	let each_blocks = [];
 
@@ -4942,8 +5166,8 @@ function create_fragment$h(ctx) {
 		},
 		h() {
 			attr(h3, "class", "subheading");
-			attr(ul, "class", "svelte-ps7fbl");
-			attr(section, "class", "section-container svelte-ps7fbl");
+			attr(ul, "class", "svelte-1xry70j");
+			attr(section, "class", "section-container svelte-1xry70j");
 			attr(div, "class", "section");
 			attr(div, "id", "section-a70d1761");
 		},
@@ -4970,7 +5194,7 @@ function create_fragment$h(ctx) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block$4(ctx);
+					if_block = create_if_block_1$4(ctx);
 					if_block.c();
 					if_block.m(section, t0);
 				}
@@ -5081,8 +5305,8 @@ function get_each_context$5(ctx, list, i) {
 	return child_ctx;
 }
 
-// (41:2) {#if main_heading}
-function create_if_block$5(ctx) {
+// (40:2) {#if main_heading}
+function create_if_block_1$5(ctx) {
 	let h2;
 	let t;
 
@@ -5115,58 +5339,27 @@ function create_if_block$5(ctx) {
 	};
 }
 
-// (45:4) {#each items as {label,icon}}
-function create_each_block$5(ctx) {
-	let li;
+// (46:8) {#if icon}
+function create_if_block$5(ctx) {
 	let icon;
-	let t0;
-	let span;
-	let t1_value = /*label*/ ctx[7] + "";
-	let t1;
-	let t2;
 	let current;
 	icon = new Component$1({ props: { icon: /*icon*/ ctx[8] } });
 
 	return {
 		c() {
-			li = element("li");
 			create_component(icon.$$.fragment);
-			t0 = space();
-			span = element("span");
-			t1 = text(t1_value);
-			t2 = space();
-			this.h();
 		},
 		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
-			var li_nodes = children(li);
-			claim_component(icon.$$.fragment, li_nodes);
-			t0 = claim_space(li_nodes);
-			span = claim_element(li_nodes, "SPAN", {});
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, t1_value);
-			span_nodes.forEach(detach);
-			t2 = claim_space(li_nodes);
-			li_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(li, "class", "svelte-ps7fbl");
+			claim_component(icon.$$.fragment, nodes);
 		},
 		m(target, anchor) {
-			insert_hydration(target, li, anchor);
-			mount_component(icon, li, null);
-			append_hydration(li, t0);
-			append_hydration(li, span);
-			append_hydration(span, t1);
-			append_hydration(li, t2);
+			mount_component(icon, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
 			if (dirty & /*items*/ 4) icon_changes.icon = /*icon*/ ctx[8];
 			icon.$set(icon_changes);
-			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
 		},
 		i(local) {
 			if (current) return;
@@ -5178,8 +5371,95 @@ function create_each_block$5(ctx) {
 			current = false;
 		},
 		d(detaching) {
+			destroy_component(icon, detaching);
+		}
+	};
+}
+
+// (44:4) {#each items as {label,icon}}
+function create_each_block$5(ctx) {
+	let li;
+	let t0;
+	let span;
+	let t1_value = /*label*/ ctx[7] + "";
+	let t1;
+	let t2;
+	let current;
+	let if_block = /*icon*/ ctx[8] && create_if_block$5(ctx);
+
+	return {
+		c() {
+			li = element("li");
+			if (if_block) if_block.c();
+			t0 = space();
+			span = element("span");
+			t1 = text(t1_value);
+			t2 = space();
+			this.h();
+		},
+		l(nodes) {
+			li = claim_element(nodes, "LI", { class: true });
+			var li_nodes = children(li);
+			if (if_block) if_block.l(li_nodes);
+			t0 = claim_space(li_nodes);
+			span = claim_element(li_nodes, "SPAN", {});
+			var span_nodes = children(span);
+			t1 = claim_text(span_nodes, t1_value);
+			span_nodes.forEach(detach);
+			t2 = claim_space(li_nodes);
+			li_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(li, "class", "svelte-1xry70j");
+		},
+		m(target, anchor) {
+			insert_hydration(target, li, anchor);
+			if (if_block) if_block.m(li, null);
+			append_hydration(li, t0);
+			append_hydration(li, span);
+			append_hydration(span, t1);
+			append_hydration(li, t2);
+			current = true;
+		},
+		p(ctx, dirty) {
+			if (/*icon*/ ctx[8]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*items*/ 4) {
+						transition_in(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block$5(ctx);
+					if_block.c();
+					transition_in(if_block, 1);
+					if_block.m(li, t0);
+				}
+			} else if (if_block) {
+				group_outros();
+
+				transition_out(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				check_outros();
+			}
+
+			if ((!current || dirty & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[7] + "")) set_data(t1, t1_value);
+		},
+		i(local) {
+			if (current) return;
+			transition_in(if_block);
+			current = true;
+		},
+		o(local) {
+			transition_out(if_block);
+			current = false;
+		},
+		d(detaching) {
 			if (detaching) detach(li);
-			destroy_component(icon);
+			if (if_block) if_block.d();
 		}
 	};
 }
@@ -5193,7 +5473,7 @@ function create_fragment$i(ctx) {
 	let t2;
 	let ul;
 	let current;
-	let if_block = /*main_heading*/ ctx[0] && create_if_block$5(ctx);
+	let if_block = /*main_heading*/ ctx[0] && create_if_block_1$5(ctx);
 	let each_value = /*items*/ ctx[2];
 	let each_blocks = [];
 
@@ -5248,8 +5528,8 @@ function create_fragment$i(ctx) {
 		},
 		h() {
 			attr(h3, "class", "subheading");
-			attr(ul, "class", "svelte-ps7fbl");
-			attr(section, "class", "section-container svelte-ps7fbl");
+			attr(ul, "class", "svelte-1xry70j");
+			attr(section, "class", "section-container svelte-1xry70j");
 			attr(div, "class", "section");
 			attr(div, "id", "section-e3f55c1a");
 		},
@@ -5276,7 +5556,7 @@ function create_fragment$i(ctx) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block$5(ctx);
+					if_block = create_if_block_1$5(ctx);
 					if_block.c();
 					if_block.m(section, t0);
 				}
