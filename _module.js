@@ -2732,7 +2732,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (141:8) {#each social_links as { link, icon }}
+// (142:8) {#each social_links as { link, icon }}
 function create_each_block(ctx) {
 	let li;
 	let a;
@@ -2774,10 +2774,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-1erfrv9");
+			attr(span, "class", "svelte-1mrjtcz");
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
-			attr(a, "class", "svelte-1erfrv9");
-			attr(li, "class", "svelte-1erfrv9");
+			attr(a, "class", "svelte-1mrjtcz");
+			attr(li, "class", "svelte-1mrjtcz");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2906,14 +2906,14 @@ function create_fragment$2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*portrait*/ ctx[1].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*portrait*/ ctx[1].image.alt);
-			attr(img, "class", "svelte-1erfrv9");
-			attr(figure, "class", "svelte-1erfrv9");
+			attr(img, "class", "svelte-1mrjtcz");
+			attr(figure, "class", "svelte-1mrjtcz");
 			toggle_class(figure, "square", /*portrait*/ ctx[1].variation === "square");
-			attr(h1, "class", "headline svelte-1erfrv9");
-			attr(div0, "class", "description svelte-1erfrv9");
-			attr(ul, "class", "social svelte-1erfrv9");
-			attr(div1, "class", "svelte-1erfrv9");
-			attr(div2, "class", "section-container svelte-1erfrv9");
+			attr(h1, "class", "headline svelte-1mrjtcz");
+			attr(div0, "class", "description svelte-1mrjtcz");
+			attr(ul, "class", "social svelte-1mrjtcz");
+			attr(div1, "class", "svelte-1mrjtcz");
+			attr(div2, "class", "section-container svelte-1mrjtcz");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-f8320412");
 		},
@@ -6158,8 +6158,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6183,8 +6183,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6238,8 +6238,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6263,8 +6263,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6292,8 +6292,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6317,8 +6317,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6346,8 +6346,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6371,8 +6371,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6400,8 +6400,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6425,8 +6425,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6454,8 +6454,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6479,8 +6479,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6508,8 +6508,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6533,8 +6533,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6614,8 +6614,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6655,8 +6655,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6704,8 +6704,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6752,8 +6752,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6789,8 +6789,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6814,8 +6814,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
@@ -6851,8 +6851,8 @@ function create_fragment$l(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
-					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691175728000favicon.ico",
+					"src": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
+					"url": "https://aohajlelyiugrujyykoi.supabase.co/storage/v1/object/public/images/9a561462-8a55-4023-b6e8-0264fb2664f5/1691176212000favicon.ico",
 					"size": 15
 				},
 				site_nav: [
