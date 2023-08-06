@@ -771,11 +771,11 @@ function create_fragment(ctx) {
 			link1 = element("link");
 			meta2 = element("meta");
 			style = element("style");
-			t = text("/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a60;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 2rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
+			t = text("/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a60;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n  \n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 2rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-l4ao96', document.head);
+			const head_nodes = head_selector('svelte-1a5mh34', document.head);
 			meta0 = claim_element(head_nodes, "META", { name: true, content: true });
 			meta1 = claim_element(head_nodes, "META", { charset: true });
 
@@ -790,7 +790,7 @@ function create_fragment(ctx) {
 			meta2 = claim_element(head_nodes, "META", { name: true, content: true });
 			style = claim_element(head_nodes, "STYLE", {});
 			var style_nodes = children(style);
-			t = claim_text(style_nodes, "/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a60;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 2rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
+			t = claim_text(style_nodes, "/* Reset & standardize default styles */\n@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\") layer;\n\n/* Design tokens (apply to components) */\n:root {\n  /* Custom theme options */\n  --color-accent: #5a5a5a60;\n  --font-primary: \"Bespoke Serif\", serif;\n  --font-secondary: \"Open Sans\", sans-serif;\n\n  /* Base values */\n  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);\n  --border-radius: 8px;\n  --border-color: #cbcace;\n}\n\n/* Root element (use instead of `body`) */\n#page {\n  font-family: var(--font-secondary), system-ui, sans-serif;\n  color: #222;\n  line-height: 1.5;\n  font-size: 1.125rem;\n  background: white;\n  \n}\n\n/* Elements */\n.section-container {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 2rem 2rem;\n}\n\na.link {\n  line-height: 1.25;\n  font-weight: 400;\n  border-bottom: 2px solid var(--color-accent, rebeccapurple);\n  transform: translateY(-2px); /* move link back into place */\n  transition: var(--transition, 0.1s border);\n}\n\na.link:hover {\n    border-color: transparent;\n  }\n\n.heading {\n  font-family: var(--font-primary);\n  font-size: 2rem;\n  line-height: 1.15;\n  font-weight: 500;\n  margin-bottom: 1.25rem;\n}\n\n.subheading {\n font-family: var(--font-primary);\n    font-size: 1.2rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent, rebeccapurple);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition, 0.1s box-shadow);\n  border: 0;\n}\n\n/* reset */\n\n.button:hover {\n    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);\n  }\n\n.button.inverted {\n    background: transparent;\n    color: var(--color-accent, rebeccapurple);\n  }\n\n/* Content Section */\n.section .content {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 4rem 2rem;\n}\n.section .content p {\n    padding: 0.25rem 0;\n  }\n.section .content img {\n    width: 100%;\n    margin: 2rem 0;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\n.section .content a.link {\n  }\n.section .content h1 {\n    font-family: var(--font-primary);\n    font-size: 3rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h2 {\n    font-family: var(--font-primary);\n    font-size: 2rem;\n    font-weight: 500;\n    margin-bottom: 1rem;\n  }\n.section .content h3 {\n    font-family: var(--font-primary);\n    font-size: 1.5rem;\n    font-weight: 500;\n    margin-bottom: 0.5rem;\n  }\n.section .content ul {\n    list-style: disc;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content ol {\n    list-style: decimal;\n    padding: 0.5rem 0;\n    padding-left: 1.25rem;\n  }\n.section .content blockquote {\n    padding: 2rem;\n    box-shadow: var(--box-shadow);\n    border-radius: var(--border-radius);\n  }\nsection.has-content {\n  background: var(--background);\n}");
 			style_nodes.forEach(detach);
 			head_nodes.forEach(detach);
 			this.h();
@@ -2774,10 +2774,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-1gtn44");
+			attr(span, "class", "svelte-f85p2f");
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
-			attr(a, "class", "svelte-1gtn44");
-			attr(li, "class", "svelte-1gtn44");
+			attr(a, "class", "svelte-f85p2f");
+			attr(li, "class", "svelte-f85p2f");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2906,14 +2906,14 @@ function create_fragment$2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*portrait*/ ctx[1].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*portrait*/ ctx[1].image.alt);
-			attr(img, "class", "svelte-1gtn44");
-			attr(figure, "class", "svelte-1gtn44");
+			attr(img, "class", "svelte-f85p2f");
+			attr(figure, "class", "svelte-f85p2f");
 			toggle_class(figure, "square", /*portrait*/ ctx[1].variation === "square");
-			attr(h1, "class", "headline svelte-1gtn44");
-			attr(div0, "class", "description svelte-1gtn44");
-			attr(ul, "class", "social svelte-1gtn44");
-			attr(div1, "class", "svelte-1gtn44");
-			attr(div2, "class", "section-container svelte-1gtn44");
+			attr(h1, "class", "headline svelte-f85p2f");
+			attr(div0, "class", "description svelte-f85p2f");
+			attr(ul, "class", "social svelte-f85p2f");
+			attr(div1, "class", "svelte-f85p2f");
+			attr(div2, "class", "section-container svelte-f85p2f");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-f8320412");
 		},
@@ -3141,7 +3141,7 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-f85pmk");
+			attr(div0, "class", "section-container content svelte-1q71m10");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-d87da069");
 		},
@@ -3287,7 +3287,7 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-f85pmk");
+			attr(div0, "class", "section-container content svelte-1q71m10");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-9fe51784");
 		},
@@ -3433,7 +3433,7 @@ function create_fragment$8(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-f85pmk");
+			attr(div0, "class", "section-container content svelte-1q71m10");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-07b91850");
 		},
@@ -3579,7 +3579,7 @@ function create_fragment$a(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-f85pmk");
+			attr(div0, "class", "section-container content svelte-1q71m10");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-251edddf");
 		},
@@ -3725,7 +3725,7 @@ function create_fragment$c(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-f85pmk");
+			attr(div0, "class", "section-container content svelte-1q71m10");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-a9b9e351");
 		},
@@ -5732,94 +5732,10 @@ class Component$j extends SvelteComponent {
 
 /* generated by Svelte v3.59.1 */
 
-function get_each_context$6(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[7] = list[i].link;
-	child_ctx[8] = list[i].icon;
-	return child_ctx;
-}
-
-// (96:8) {#each social_links as {link, icon}}
-function create_each_block$6(ctx) {
-	let li;
-	let a;
-	let icon;
-	let a_href_value;
-	let a_aria_label_value;
-	let t;
-	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[8] } });
-
-	return {
-		c() {
-			li = element("li");
-			a = element("a");
-			create_component(icon.$$.fragment);
-			t = space();
-			this.h();
-		},
-		l(nodes) {
-			li = claim_element(nodes, "LI", {});
-			var li_nodes = children(li);
-
-			a = claim_element(li_nodes, "A", {
-				href: true,
-				"aria-label": true,
-				class: true
-			});
-
-			var a_nodes = children(a);
-			claim_component(icon.$$.fragment, a_nodes);
-			a_nodes.forEach(detach);
-			t = claim_space(li_nodes);
-			li_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
-			attr(a, "aria-label", a_aria_label_value = /*icon*/ ctx[8]);
-			attr(a, "class", "svelte-1rwn3sx");
-		},
-		m(target, anchor) {
-			insert_hydration(target, li, anchor);
-			append_hydration(li, a);
-			mount_component(icon, a, null);
-			append_hydration(li, t);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const icon_changes = {};
-			if (dirty & /*social_links*/ 4) icon_changes.icon = /*icon*/ ctx[8];
-			icon.$set(icon_changes);
-
-			if (!current || dirty & /*social_links*/ 4 && a_href_value !== (a_href_value = /*link*/ ctx[7].url)) {
-				attr(a, "href", a_href_value);
-			}
-
-			if (!current || dirty & /*social_links*/ 4 && a_aria_label_value !== (a_aria_label_value = /*icon*/ ctx[8])) {
-				attr(a, "aria-label", a_aria_label_value);
-			}
-		},
-		i(local) {
-			if (current) return;
-			transition_in(icon.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			transition_out(icon.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			if (detaching) detach(li);
-			destroy_component(icon);
-		}
-	};
-}
-
 function create_fragment$k(ctx) {
-	let div3;
-	let footer;
 	let div2;
+	let footer;
+	let div1;
 	let div0;
 	let h2;
 	let t0;
@@ -5827,37 +5743,17 @@ function create_fragment$k(ctx) {
 	let a;
 	let icon;
 	let t2;
-	let span0;
+	let span;
 	let t3;
 	let a_href_value;
-	let t4;
-	let hr;
-	let t5;
-	let div1;
-	let span1;
-	let t6;
-	let t7_value = new Date().getFullYear() + "";
-	let t7;
-	let t8;
-	let ul;
 	let current;
 	icon = new Component$1({ props: { icon: "mdi:envelope" } });
-	let each_value = /*social_links*/ ctx[2];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$6(get_each_context$6(ctx, each_value, i));
-	}
-
-	const out = i => transition_out(each_blocks[i], 1, 1, () => {
-		each_blocks[i] = null;
-	});
 
 	return {
 		c() {
-			div3 = element("div");
-			footer = element("footer");
 			div2 = element("div");
+			footer = element("footer");
+			div1 = element("div");
 			div0 = element("div");
 			h2 = element("h2");
 			t0 = text(/*heading*/ ctx[0]);
@@ -5865,32 +5761,18 @@ function create_fragment$k(ctx) {
 			a = element("a");
 			create_component(icon.$$.fragment);
 			t2 = space();
-			span0 = element("span");
+			span = element("span");
 			t3 = text(/*email*/ ctx[1]);
-			t4 = space();
-			hr = element("hr");
-			t5 = space();
-			div1 = element("div");
-			span1 = element("span");
-			t6 = text("Copyright ");
-			t7 = text(t7_value);
-			t8 = space();
-			ul = element("ul");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
 			this.h();
 		},
 		l(nodes) {
-			div3 = claim_element(nodes, "DIV", { class: true, id: true });
-			var div3_nodes = children(div3);
-			footer = claim_element(div3_nodes, "FOOTER", {});
-			var footer_nodes = children(footer);
-			div2 = claim_element(footer_nodes, "DIV", { class: true });
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
 			var div2_nodes = children(div2);
-			div0 = claim_element(div2_nodes, "DIV", { class: true });
+			footer = claim_element(div2_nodes, "FOOTER", {});
+			var footer_nodes = children(footer);
+			div1 = claim_element(footer_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
 			h2 = claim_element(div0_nodes, "H2", { class: true });
 			var h2_nodes = children(h2);
@@ -5901,79 +5783,40 @@ function create_fragment$k(ctx) {
 			var a_nodes = children(a);
 			claim_component(icon.$$.fragment, a_nodes);
 			t2 = claim_space(a_nodes);
-			span0 = claim_element(a_nodes, "SPAN", { class: true });
-			var span0_nodes = children(span0);
-			t3 = claim_text(span0_nodes, /*email*/ ctx[1]);
-			span0_nodes.forEach(detach);
+			span = claim_element(a_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t3 = claim_text(span_nodes, /*email*/ ctx[1]);
+			span_nodes.forEach(detach);
 			a_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
-			t4 = claim_space(div2_nodes);
-			hr = claim_element(div2_nodes, "HR", {});
-			t5 = claim_space(div2_nodes);
-			div1 = claim_element(div2_nodes, "DIV", { class: true });
-			var div1_nodes = children(div1);
-			span1 = claim_element(div1_nodes, "SPAN", { class: true });
-			var span1_nodes = children(span1);
-			t6 = claim_text(span1_nodes, "Copyright ");
-			t7 = claim_text(span1_nodes, t7_value);
-			span1_nodes.forEach(detach);
-			t8 = claim_space(div1_nodes);
-			ul = claim_element(div1_nodes, "UL", { class: true });
-			var ul_nodes = children(ul);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].l(ul_nodes);
-			}
-
-			ul_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
-			div2_nodes.forEach(detach);
 			footer_nodes.forEach(detach);
-			div3_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(span0, "class", "svelte-1rwn3sx");
+			attr(span, "class", "svelte-1rwn3sx");
 			attr(a, "class", "email svelte-1rwn3sx");
 			attr(a, "href", a_href_value = "mailto:" + /*email*/ ctx[1]);
 			attr(div0, "class", "primary svelte-1rwn3sx");
-			attr(span1, "class", "copyright svelte-1rwn3sx");
-			attr(ul, "class", "svelte-1rwn3sx");
-			attr(div1, "class", "secondary svelte-1rwn3sx");
-			attr(div2, "class", "section-container svelte-1rwn3sx");
-			attr(div3, "class", "section");
-			attr(div3, "id", "section-51d10855");
+			attr(div1, "class", "section-container svelte-1rwn3sx");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-51d10855");
 		},
 		m(target, anchor) {
-			insert_hydration(target, div3, anchor);
-			append_hydration(div3, footer);
-			append_hydration(footer, div2);
-			append_hydration(div2, div0);
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, footer);
+			append_hydration(footer, div1);
+			append_hydration(div1, div0);
 			append_hydration(div0, h2);
 			append_hydration(h2, t0);
 			append_hydration(div0, t1);
 			append_hydration(div0, a);
 			mount_component(icon, a, null);
 			append_hydration(a, t2);
-			append_hydration(a, span0);
-			append_hydration(span0, t3);
-			append_hydration(div2, t4);
-			append_hydration(div2, hr);
-			append_hydration(div2, t5);
-			append_hydration(div2, div1);
-			append_hydration(div1, span1);
-			append_hydration(span1, t6);
-			append_hydration(span1, t7);
-			append_hydration(div1, t8);
-			append_hydration(div1, ul);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(ul, null);
-				}
-			}
-
+			append_hydration(a, span);
+			append_hydration(span, t3);
 			current = true;
 		},
 		p(ctx, [dirty]) {
@@ -5983,58 +5826,19 @@ function create_fragment$k(ctx) {
 			if (!current || dirty & /*email*/ 2 && a_href_value !== (a_href_value = "mailto:" + /*email*/ ctx[1])) {
 				attr(a, "href", a_href_value);
 			}
-
-			if (dirty & /*social_links*/ 4) {
-				each_value = /*social_links*/ ctx[2];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$6(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-						transition_in(each_blocks[i], 1);
-					} else {
-						each_blocks[i] = create_each_block$6(child_ctx);
-						each_blocks[i].c();
-						transition_in(each_blocks[i], 1);
-						each_blocks[i].m(ul, null);
-					}
-				}
-
-				group_outros();
-
-				for (i = each_value.length; i < each_blocks.length; i += 1) {
-					out(i);
-				}
-
-				check_outros();
-			}
 		},
 		i(local) {
 			if (current) return;
 			transition_in(icon.$$.fragment, local);
-
-			for (let i = 0; i < each_value.length; i += 1) {
-				transition_in(each_blocks[i]);
-			}
-
 			current = true;
 		},
 		o(local) {
 			transition_out(icon.$$.fragment, local);
-			each_blocks = each_blocks.filter(Boolean);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				transition_out(each_blocks[i]);
-			}
-
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) detach(div3);
+			if (detaching) detach(div2);
 			destroy_component(icon);
-			destroy_each(each_blocks, detaching);
 		}
 	};
 }
@@ -6049,16 +5853,16 @@ function instance$k($$self, $$props, $$invalidate) {
 	let { social_links } = $$props;
 
 	$$self.$$set = $$props => {
-		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
-		if ('site_nav' in $$props) $$invalidate(4, site_nav = $$props.site_nav);
-		if ('title' in $$props) $$invalidate(5, title = $$props.title);
-		if ('description' in $$props) $$invalidate(6, description = $$props.description);
+		if ('favicon' in $$props) $$invalidate(2, favicon = $$props.favicon);
+		if ('site_nav' in $$props) $$invalidate(3, site_nav = $$props.site_nav);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
 		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
 		if ('email' in $$props) $$invalidate(1, email = $$props.email);
-		if ('social_links' in $$props) $$invalidate(2, social_links = $$props.social_links);
+		if ('social_links' in $$props) $$invalidate(6, social_links = $$props.social_links);
 	};
 
-	return [heading, email, social_links, favicon, site_nav, title, description];
+	return [heading, email, favicon, site_nav, title, description, social_links];
 }
 
 class Component$k extends SvelteComponent {
@@ -6066,13 +5870,13 @@ class Component$k extends SvelteComponent {
 		super();
 
 		init(this, options, instance$k, create_fragment$k, safe_not_equal, {
-			favicon: 3,
-			site_nav: 4,
-			title: 5,
-			description: 6,
+			favicon: 2,
+			site_nav: 3,
+			title: 4,
+			description: 5,
 			heading: 0,
 			email: 1,
-			social_links: 2
+			social_links: 6
 		});
 	}
 }
@@ -6201,7 +6005,7 @@ function create_fragment$l(ctx) {
 				],
 				title: "Buzz Swarbrick",
 				description: {
-					"html": "<h2>Senior Frontend Developer</h2><p>I am a seasoned technologist with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.</p>",
+					"html": "<h2 id=\"seniorfrontenddeveloper\">Senior Frontend Developer</h2>\n<p>I am a seasoned technologist with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.</p>",
 					"markdown": "## Senior Frontend Developer\n\nI am a seasoned technologist with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.\n\n"
 				},
 				portrait: {
@@ -6282,8 +6086,8 @@ function create_fragment$l(ctx) {
 				title: "Buzz Swarbrick",
 				description: "I am a seasoned technologist with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.",
 				content: {
-					"html": "<h1 id=\"workexperience\">Work Experience</h1>\n<h3 id=\"seniorproductengineeralpacatravelhttpsalpacatravel\">Senior Product Engineer, <a href=\"https://alpaca.travel\">Alpaca Travel</a></h3>\n<p><em>2016 - present (7 years)</em></p>\n<p>Spearheaded the development of a comprehensive suite of product offerings, including a fully fledged content manager, embeddable maps, internal tooling, iOS and Android apps.</p>\n<ul>\n<li>Led the team in designing and building high-quality solutions to meet user needs.</li>\n<li>Worked closely with the technical director on tech stacks and infrastructure decisions.</li>\n<li>Conducted code reviews to ensure standards were met and maintained.</li>\n<li>Interviewed developers for hiring.</li>\n<li>Worked with a range of technologies and infrastructure.</li>\n<li>Implemented Agile methodologies for efficient management and delivery of new features.</li>\n</ul>\n<h3 id=\"seniorfrontenddeveloperflintinteractivehttpwwwflintinteractivecomau\">Senior Frontend Developer, <a href=\"http://www.flintinteractive.com.au/\">Flint Interactive</a></h3>\n<p><em>2014 - 2016 (2 years)</em></p>\n<ul>\n<li>Built and maintained ecommerce websites for diverse clients, including high-end fashion and food delivery.</li>\n</ul>\n<h3 id=\"frontenddeveloperflintinteractivehttpwwwflintinteractivecomau\">Frontend Developer, <a href=\"http://www.flintinteractive.com.au/\">Flint Interactive</a></h3>\n<p><em>2009 - 2014 (5 years)</em></p>\n<ul>\n<li>Built websites and email campaigns for diverse clients.</li>\n</ul>\n<h3 id=\"digitaldevelopermcsaatchihttpswwwmcsaatchicomau\">Digital Developer, <a href=\"https://www.mcsaatchi.com.au/\">M&C Saatchi</a></h3>\n<p><em>2008 - 2009 (1 year)</em></p>\n<ul>\n<li>Built web games, dynamic ad banners, and websites, specialising in Flash development.</li>\n</ul>",
-					"markdown": "\n\n# Work Experience\n\n### Senior Product Engineer, [Alpaca Travel](https://alpaca.travel)\n*2016 - present (7 years)*\n\nSpearheaded the development of a comprehensive suite of product offerings, including a fully fledged content manager, embeddable maps, internal tooling, iOS and Android apps.\n\n- Led the team in designing and building high-quality solutions to meet user needs.\n- Worked closely with the technical director on tech stacks and infrastructure decisions.\n- Conducted code reviews to ensure standards were met and maintained.\n- Interviewed developers for hiring.\n- Worked with a range of technologies and infrastructure.\n- Implemented Agile methodologies for efficient management and delivery of new features.\n\n### Senior Frontend Developer, [Flint Interactive](http://www.flintinteractive.com.au/)\n*2014 - 2016 (2 years)*\n- Built and maintained ecommerce websites for diverse clients, including high-end fashion and food delivery.\n\n### Frontend Developer, [Flint Interactive](http://www.flintinteractive.com.au/)\n*2009 - 2014 (5 years)*\n- Built websites and email campaigns for diverse clients.\n\n### Digital Developer, [M&C Saatchi](https://www.mcsaatchi.com.au/)\n*2008 - 2009 (1 year)*\n- Built web games, dynamic ad banners, and websites, specialising in Flash development.\n"
+					"html": "<h1 id=\"workexperience\">Work Experience</h1>\n<h3 id=\"seniorproductengineeralpacatravelhttpsalpacatravel\">Senior Product Engineer, <a href=\"https://alpaca.travel\">Alpaca Travel</a></h3>\n<p><em>2016 - present (7 years)</em></p>\n<p>Spearheaded the development of a comprehensive suite of product offerings, including a fully fledged content manager, embeddable maps, printable PDF's, internal tooling, iOS and Android apps.</p>\n<ul>\n<li>Led the team in designing and building high-quality solutions to meet user needs.</li>\n<li>Worked closely with the technical director on tech stacks and infrastructure decisions.</li>\n<li>Conducted code reviews to ensure standards were met and maintained.</li>\n<li>Interviewed developers for hiring.</li>\n<li>Worked with a range of technologies and infrastructure.</li>\n<li>Implemented Agile methodologies for efficient management and delivery of new features.</li>\n</ul>\n<h3 id=\"seniorfrontenddeveloperflintinteractivehttpwwwflintinteractivecomau\">Senior Frontend Developer, <a href=\"http://www.flintinteractive.com.au/\">Flint Interactive</a></h3>\n<p><em>2014 - 2016 (2 years)</em></p>\n<ul>\n<li>Built and maintained ecommerce websites for diverse clients, including high-end fashion and food delivery.</li>\n</ul>\n<h3 id=\"frontenddeveloperflintinteractivehttpwwwflintinteractivecomau\">Frontend Developer, <a href=\"http://www.flintinteractive.com.au/\">Flint Interactive</a></h3>\n<p><em>2009 - 2014 (5 years)</em></p>\n<ul>\n<li>Built websites and email campaigns for diverse clients.</li>\n</ul>\n<h3 id=\"digitaldevelopermcsaatchihttpswwwmcsaatchicomau\">Digital Developer, <a href=\"https://www.mcsaatchi.com.au/\">M&C Saatchi</a></h3>\n<p><em>2008 - 2009 (1 year)</em></p>\n<ul>\n<li>Built web games, dynamic ad banners, and websites, specialising in Flash development.</li>\n</ul>",
+					"markdown": "\n\n# Work Experience\n\n### Senior Product Engineer, [Alpaca Travel](https://alpaca.travel)\n*2016 - present (7 years)*\n\nSpearheaded the development of a comprehensive suite of product offerings, including a fully fledged content manager, embeddable maps, printable PDF's, internal tooling, iOS and Android apps.\n\n- Led the team in designing and building high-quality solutions to meet user needs.\n- Worked closely with the technical director on tech stacks and infrastructure decisions.\n- Conducted code reviews to ensure standards were met and maintained.\n- Interviewed developers for hiring.\n- Worked with a range of technologies and infrastructure.\n- Implemented Agile methodologies for efficient management and delivery of new features.\n\n### Senior Frontend Developer, [Flint Interactive](http://www.flintinteractive.com.au/)\n*2014 - 2016 (2 years)*\n- Built and maintained ecommerce websites for diverse clients, including high-end fashion and food delivery.\n\n### Frontend Developer, [Flint Interactive](http://www.flintinteractive.com.au/)\n*2009 - 2014 (5 years)*\n- Built websites and email campaigns for diverse clients.\n\n### Digital Developer, [M&C Saatchi](https://www.mcsaatchi.com.au/)\n*2008 - 2009 (1 year)*\n- Built web games, dynamic ad banners, and websites, specialising in Flash development.\n"
 				}
 			}
 		});
