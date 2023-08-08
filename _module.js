@@ -6005,8 +6005,8 @@ function create_fragment$l(ctx) {
 				],
 				title: "Buzz Swarbrick",
 				description: {
-					"html": "<h2>Senior Frontend Developer</h2><p>I am a seasoned developer with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.</p>",
-					"markdown": "## Senior Frontend Developer\n\nI am a seasoned developer with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.\n\n"
+					"html": "<h2>Senior Frontend Developer</h2><p>I am a seasoned developer with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users. </p><p></p><p>With a strong foundation in technologies such as React and TypeScript, I have demonstrated my ability to adapt to various technologies and frameworks, ensuring dynamic and interactive applications that meet modern standards.</p>",
+					"markdown": "## Senior Frontend Developer\n\nI am a seasoned developer with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.\n\n\n\nWith a strong foundation in technologies such as React and TypeScript, I have demonstrated my ability to adapt to various technologies and frameworks, ensuring dynamic and interactive applications that meet modern standards.\n\n"
 				},
 				portrait: {
 					"image": {
