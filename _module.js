@@ -2732,7 +2732,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (152:8) {#each social_links as { link, icon }}
+// (157:8) {#each social_links as { link, icon }}
 function create_each_block(ctx) {
 	let li;
 	let a;
@@ -2774,10 +2774,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-19ijnk");
+			attr(span, "class", "svelte-17mlg3y");
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
-			attr(a, "class", "svelte-19ijnk");
-			attr(li, "class", "svelte-19ijnk");
+			attr(a, "class", "svelte-17mlg3y");
+			attr(li, "class", "svelte-17mlg3y");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2906,14 +2906,14 @@ function create_fragment$2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*portrait*/ ctx[1].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*portrait*/ ctx[1].image.alt);
-			attr(img, "class", "svelte-19ijnk");
-			attr(figure, "class", "svelte-19ijnk");
+			attr(img, "class", "svelte-17mlg3y");
+			attr(figure, "class", "svelte-17mlg3y");
 			toggle_class(figure, "square", /*portrait*/ ctx[1].variation === "square");
-			attr(h1, "class", "headline svelte-19ijnk");
-			attr(div0, "class", "description svelte-19ijnk");
-			attr(ul, "class", "social svelte-19ijnk");
-			attr(div1, "class", "svelte-19ijnk");
-			attr(div2, "class", "section-container svelte-19ijnk");
+			attr(h1, "class", "headline svelte-17mlg3y");
+			attr(div0, "class", "description svelte-17mlg3y");
+			attr(ul, "class", "social svelte-17mlg3y");
+			attr(div1, "class", "svelte-17mlg3y");
+			attr(div2, "class", "section-container svelte-17mlg3y");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-f8320412");
 		},
@@ -6302,8 +6302,8 @@ function create_fragment$l(ctx) {
 				title: "Buzz Swarbrick",
 				description: "I am a seasoned technologist with 20 years of web experience, dedicated to delivering exceptional user experiences. I specialise in crafting visually appealing and intuitive web and mobile apps, focusing on user experience to create engaging interfaces that delight users.",
 				content: {
-					"html": "<h1 id=\"interests\">Interests</h1>\n<ul>\n<li>Guitar / Piano / Drums</li>\n<li>Cooking</li>\n<li>Painting / Illustration</li>\n</ul>",
-					"markdown": "# Interests\n\n- Guitar / Piano / Drums\n- Cooking\n- Painting / Illustration"
+					"html": "<h1>Interests</h1><ul><li><p>Guitar / Piano / Drums</p></li><li><p>Cooking</p></li><li><p>Painting / Illustration</p></li></ul>",
+					"markdown": "# Interests\n\n- Guitar / Piano / Drums\n\n- Cooking\n\n- Painting / Illustration\n\n\n<!-- -->\n\n"
 				}
 			}
 		});
